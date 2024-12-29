@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auction Platform</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script defer src="./js/homepage.js"></script> <!-- Link external JS -->
+  <script defer src="./js/auth.js"></script> <!-- Link external JS -->
+  <script defer src="./js/whoami.js"></script>
+  <script defer src="./js/usersList.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to the Auction Platform</h1>
+    <nav>
+      <ul>
+        <!--<li><a href="signin.html">Login</a></!--<li>-->
+        <li id="login-btn"><a href="signin.html">Login</a></li> <!-- Initially visible -->
+        <li id="logout-btn" style="display:none;"><a href="#">Logout</a></li> <!-- Initially hidden -->
+        <li id="signup-btn"><a href="signup.html">Signup</a></li> <!-- Initially visible -->
+        <li><a href="auctions.html">View Auctions</a></li>
+        <li><a href="create-auction.html">Create Auction</a></li>
+        <li><a href="update-auction.html">Update Auction</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Our Platform</h2>
+      <p>Welcome to the ultimate auction platform! Bid on exciting items, create your own auctions, and explore a
+        community of auction enthusiasts. Sign up to get started.</p>
+    </section>
+
+    <section>
+      <h2>Features</h2>
+      <ul>
+        <li>View active and expired auctions.</li>
+        <li>Create and manage your own auctions.</li>
+        <li>Place bids in real time and win auctions.</li>
+        <li>Track your auction history and winnings.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h1>Users List</h1>
+      <label for="search-users">Search Users:</label>
+      <input type="text" id="search-users" placeholder="Search by username, name, or surname" />
+
+      <ul id="users-list"></ul>
+    </section>
+
+    <section>
+      <h1>User info</h1>
+      <button id="user-info">User info</button>
+    </section>
+
+
+  <!--  <section>
+      <h2>Quick Links</h2>
+      <button id="view-auctions">View All Auctions</button>
+      <button id="create-auction">Create Auction</button>
+    </section>-->
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Auction Platform. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

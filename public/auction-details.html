@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Details</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="js/auction-details.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Auctions details</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="auctions.html">Auctions</a></li>
+                <li id="login-btn"><a href="signin.html">Login</a></li> <!-- Initially visible -->
+                <li id="logout-btn" style="display:none;"><a href="#">Logout</a></li> <!-- Initially hidden -->
+                <li id="signup-btn"><a href="signup.html">Signup</a></li> <!-- Initially visible -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="auction-details">
+            <!-- <ul id="bids-list"></ul> -->
+            <h1>Auction Details</h1>
+            <p><strong>Title:</strong> <span id="auction-title"></span></p>
+            <p><strong>Description:</strong> <span id="auction-description"></span></p>
+            <p><strong>Starting Price:</strong> $<span id="auction-starting-price"></span></p>
+            <p><strong>Current Price:</strong> $<span id="auction-current-price"></span></p>
+            <p><strong>Expiration Date:</strong> <span id="auction-expiration-date"></span></p>
+            <p><strong>Created By:</strong> <span id="auction-creator"></span></p>
+            <p><strong>Winner:</strong> <span id="auction-winner"></span></p>
+            <!-- Delete button -->
+            <button id="delete-auction">Delete Auction</button>
+            <input type="number" id="bid-amount" placeholder="Enter your bid amount" />
+            <button id="place-bid">Place Bid</button>
+            <button id="bids-list"> Bids list for this Auction</button>
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Auction Platform. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

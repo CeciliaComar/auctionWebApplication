@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auctions</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="./js/auctions.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Auctions</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create-auction.html">Create Auction</a></li>
+                <li><a href="update-auction.html">Update Auction</a></li>
+                <li id="login-btn"><a href="signin.html">Login</a></li> <!-- Initially visible -->
+                <li id="logout-btn" style="display:none;"><a href="#">Logout</a></li> <!-- Initially hidden -->
+                <li id="signup-btn"><a href="signup.html">Signup</a></li> <!-- Initially visible -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <input type="text" id="search" placeholder="Search auctions..." />
+            <select id="status">
+                <option value="all">All</option>
+                <option value="active">Active</option>
+                <option value="expired">Expired</option>
+            </select>
+            <button id="filterBtn">Filter</button>
+        </section>
+
+        <div id="auctionList">
+            <p>Loading auctions...</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Auction Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
